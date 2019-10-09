@@ -70,7 +70,7 @@ describe('instance methods', () => {
           expect(cmd).toHaveBeenCalled()
           // todo: rewrite the following so it does not fail when different consoles
           // truncate text in different spots.
-          // expect(stdout.output).toMatchFixture('namespace/get.txt')
+          expect(stdout.output).toMatchFixtureIgnoreWhite('namespace/get.txt')
           done()
         })
     })
